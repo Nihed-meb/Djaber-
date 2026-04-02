@@ -13,7 +13,7 @@ export default function Navigation() {
     { label: "À Propos", href: "#about" },
     { label: "Statistiques", href: "#stats" },
     { label: "Galerie", href: "#gallery" },
-    { label: "Réalisations", href: "#achievements" },
+    { label: "Carières", href: "#achievements" },
   ];
 
   const handleScroll = (href: string) => {
