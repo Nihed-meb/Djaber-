@@ -25,7 +25,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(135deg, rgba(10, 10, 10, 0.7) 0%, rgba(10, 10, 10, 0.3) 50%, rgba(10, 10, 10, 0.7) 100%), url('https://res.cloudinary.com/dghbmtjou/image/upload/v1774824412/photo_2026-03-30_00-45-53_fwda7g.jpg')`,
+          backgroundImage: `linear-gradient(135deg, rgba(10, 10, 10, 0.7) 0%, rgba(10, 10, 10, 0.3) 50%, rgba(10, 10, 10, 0.7) 100%), url('https://res.cloudinary.com/dghbmtjou/image/upload/v1775141825/photo_2026-04-02_16-56-52_pbn2k7.jpg')`,
         }}
       />
 
