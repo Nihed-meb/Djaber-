@@ -10,13 +10,13 @@ export default function Achievements() {
       year: "2025 - Présent",
       title: "CR Belouizdad",
       description: "Joueur clé du club, apportant leadership et mentalité gagnante",
-      icon: "🏆",
+      logo: "https://res.cloudinary.com/dghbmtjou/image/upload/v1774904412/t%C3%A9l%C3%A9chargement_rlbtnh.png",
     },
     {
       year: "2015 - 2025",
       title: "AC Paradou",
       description: "Développement professionnel et expérience de haut niveau",
-      icon: "⭐",
+      logo: "https://res.cloudinary.com/dghbmtjou/image/upload/v1774904094/t%C3%A9l%C3%A9chargement_1_qdcovz.jpg",
     },
   ];
 
@@ -57,7 +57,11 @@ export default function Achievements() {
                 <div className="flex-1 md:flex-1">
                   <div className="bg-card border border-border rounded-xl p-6 hover:border-accent transition-all duration-300 hover:shadow-lg hover:shadow-accent/20">
                     <div className="flex items-start gap-4">
-                      <div className="text-4xl">{achievement.icon}</div>
+                      <img
+                        src={achievement.logo}
+                        alt={achievement.title}
+                        className="w-14 h-14 object-cover rounded-full border border-border"
+                      />
                       <div className="flex-1">
                         <div className="text-accent font-bold text-lg mb-2">
                           {achievement.year}
@@ -85,8 +89,6 @@ export default function Achievements() {
           </div>
         </div>
       </div>
-
-
     </section>
   );
 }
