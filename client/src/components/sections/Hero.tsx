@@ -3,10 +3,6 @@ import { Button } from "@/components/ui/button";
 
 /**
  * Hero Section - Section d'accueil principale
- * Design: Image pleine largeur avec overlay noir dégradé
- * - Titre massif en doré
- * - Ligne dorée verticale
- * - Animations au scroll
  */
 export default function Hero() {
   const handleScroll = () => {
@@ -17,11 +13,10 @@ export default function Hero() {
   };
 
   return (
-    <section 
+    <section
       id="hero"
       className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden"
     >
-      {/* Background Image - Remplacer par votre URL */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
@@ -29,49 +24,47 @@ export default function Hero() {
         }}
       />
 
-      {/* Contenu */}
       <div className="relative z-10 container max-w-6xl mx-auto px-4">
         <div className="flex items-center gap-8">
-          {/* Ligne dorée verticale */}
           <div className="hidden lg:block w-1 h-40 bg-gradient-to-b from-accent via-accent to-transparent rounded-full animate-pulse" />
 
-          {/* Contenu texte */}
           <div className="flex-1 animate-in fade-in slide-in-from-left-8 duration-1000">
-            <h1 className="text-6xl md:text-8xl font-bold mb-4 font-display">
+            <h1 className="text-6xl md:text-8xl font-bold mb-4 font-display leading-none">
               <span className="text-accent">Djaber</span>
               <br />
               <span className="text-foreground">Kaassis</span>
             </h1>
-            
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 font-light">
-              Joueur Professionnel de Football
+
+            <p className="text-xl md:text-2xl text-muted-foreground mb-6 font-light">
+              Site officiel de Djaber Kaassis
             </p>
 
-            <p className="text-lg text-foreground/80 mb-12 max-w-xl leading-relaxed">
-              Découvrez mon parcours, mes statistiques, et mes réalisations. 
-            
+            <p className="text-lg md:text-xl text-foreground/90 mb-4 max-w-2xl leading-relaxed">
+              Joueur professionnel de football algérien et milieu de terrain.
+            </p>
+
+            <p className="text-lg text-foreground/80 mb-12 max-w-2xl leading-relaxed">
+              Découvrez le parcours de Djaber Kaassis, ses clubs, ses statistiques,
+              ses réalisations et ses actualités.
             </p>
 
             <div className="flex gap-4">
-              <Button 
+              <Button
                 onClick={handleScroll}
                 className="bg-accent text-accent-foreground hover:bg-opacity-90 px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-accent/50"
               >
                 Découvrir
               </Button>
-             
             </div>
           </div>
 
-          {/* Image à droite - Remplacer par votre URL */}
           <div className="flex-1 animate-in fade-in slide-in-from-right-8 duration-1000 delay-200">
             <div className="relative">
-              {/* Cadre doré */}
               <div className="absolute inset-0 bg-gradient-to-br from-accent via-accent/50 to-transparent rounded-2xl transform rotate-3" />
-              
+
               <img
                 src="https://res.cloudinary.com/doc0kcfdm/image/upload/f_auto,q_auto/1_lft7p2"
-                alt="Joueur"
+                alt="Djaber Kaassis, joueur professionnel de football algérien"
                 className="relative w-full h-auto rounded-2xl object-cover shadow-2xl"
               />
             </div>
@@ -79,15 +72,13 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
       <button
         onClick={handleScroll}
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce"
+        aria-label="Faire défiler vers la section suivante"
       >
         <ChevronDown className="text-accent" size={32} />
       </button>
-
-
     </section>
   );
 }
