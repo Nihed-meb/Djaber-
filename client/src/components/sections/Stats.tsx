@@ -26,7 +26,7 @@ export default function Stats() {
     },
     {
       label: "Matchs Joués",
-      value: "71",
+      value: "130",
       subtext: "Carrière professionnelle",
       icon: "🏟️",
     },
