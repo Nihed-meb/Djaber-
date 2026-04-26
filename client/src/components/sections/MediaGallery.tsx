@@ -64,6 +64,13 @@ export default function MediaGallery() {
       embedUrl: "https://res.cloudinary.com/dghbmtjou/video/upload/v1774997850/IMG_8733_hohtok.mp4", 
       isVideo: true 
     },
+    { 
+      id: 5, 
+      title: "Vidéo 5", 
+      thumbnail: "https://res.cloudinary.com/dghbmtjou/image/upload/v1777231326/photo_2026-04-26_21-21-56_ygpfly.jpg", 
+      embedUrl: "https://res.cloudinary.com/dghbmtjou/video/upload/v1777231235/IMG_9217_h39ria.mp4", 
+      isVideo: true 
+    },
   ];
 
   const currentItems = activeTab === "photos" ? photos : videos;
